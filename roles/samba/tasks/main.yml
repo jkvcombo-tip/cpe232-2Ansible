@@ -1,2 +1,9 @@
 ---
 # tasks file for samba
+
+
+- name: Installing samba on ubuntu
+  apt:
+    name: samba
+    state: latest
+    update_cache: yes
